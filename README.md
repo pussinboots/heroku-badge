@@ -2,7 +2,7 @@ heroku-badge
 ==================
 [![Build Status](https://travis-ci.org/pussinboots/heroku-badge.svg?branch=master)](https://travis-ci.org/pussinboots/heroku-badge)
 [![Dependencies](https://david-dm.org/pussinboots/heroku-badge.png)](https://david-dm.org/pussinboots/heroku-badge)
-[![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)](https://heroku-badge.herokuapp.com/sample.html)
+[![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)](https://heroku-badge.herokuapp.com/projects.html)
 
 Can be used to display heroku based badge that show heroku running when heroku app response otherwise heroku failed.
 This project is build in near 2 hours so it is still pre alpha.
