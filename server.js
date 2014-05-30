@@ -14,11 +14,12 @@ server.use(function (req, res, next) {
 			var errorMessage = error || response.statusCode;
 			console.log('server error image for ' + app + ' error ' + errorMessage);
 			var fileStream = fs.createReadStream('public/images/heroku-failed.png');
+			res.writeHead(200, {"Cache-Control:" : "no-cache, no-store, must-revalidate" });
         		fileStream.pipe(res);
 			
 		} else {
 			console.log('server success image for ' + app);
-			res.writeHead(200, {'Content-Type': 'image/png' });
+			res.writeHead(200, {'Content-Type': 'image/png', "Cache-Control:" : "no-cache, no-store, must-revalidate" });
 			res.contentType = 'image/png';
 	     		res.end(body, 'binary');
 		}
