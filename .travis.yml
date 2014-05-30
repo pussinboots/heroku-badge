@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- 0.10
+deploy:
+  provider: heroku
+  app: heroku-badge
+  strategy: git
+  api_key:
+    secure: nQ9G863kXSWi+AC/Xreiz1/bGTikFfU+0MNQY6NkvMh3A7vJjQP52cpOcVsSnJi8oekTYrbJDj/aswSSXSoJI5ftvxjBU5GwGyB6gjJQRtMGMn3IBgc9X19vW4NGqX5Y2aQRoJOfHy2A1sKrkycfEdy/x8Z3jhoPHG1+Pi0lLNQ=
+before_deploy:
+- if [[ -a .git/shallow ]]; then git fetch --unshallow; fi

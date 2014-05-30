@@ -1,0 +1,9 @@
+.idea
+.idea_modules
+coverage
+node_modules
+test-results.xml
+logs
+project/target
+project/project
+target
