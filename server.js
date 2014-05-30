@@ -1,11 +1,13 @@
 var connect = require('connect');
 var requestCl = require("request");
+var serveStatic = require('serve-static');
 var fs = require('fs');
 var url = require('url');
 
 var port = Number(process.env.PORT || 9000);
 var server = connect()
-server.use(function (req, res) {
+server.use(serveStatic(__dirname+'/public'));
+server.use(function (req, res, next) {
 	var app = url.parse(req.url, true).query.app;
 	requestCl.get({url:"https://"+app+".herokuapp.com/images/heroku-badge.png",  encoding: 'binary'}, function(error, response, body) {
 		if(error || response.statusCode!=200) {
@@ -22,4 +24,5 @@ server.use(function (req, res) {
 		}
 	});
 });
+
 server.listen(port);
