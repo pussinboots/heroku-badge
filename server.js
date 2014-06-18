@@ -14,7 +14,7 @@ server.use(function (req, res, next) {
 			var errorMessage = error || response.statusCode;
 			console.log('server error image for ' + app + ' error ' + errorMessage);
 			var fileStream = fs.createReadStream('public/images/heroku-failed.png');
-			res.writeHead(200, {"Cache-Control:" : "no-cache, no-store, must-revalidate" });
+			res.writeHead(200, {'Content-Type': 'image/png', "Cache-Control:" : "no-cache, no-store, must-revalidate" });
         		fileStream.pipe(res);
 			
 		} else {
