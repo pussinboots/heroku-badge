@@ -20,6 +20,16 @@ Markdown:
     [![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)]
 
 
+If the heroku app has no index.html than use the root query parameter to specify the url to check if heroku response with http status 200.
+
+HTML:
+
+    <img src="http://heroku-badge.herokuapp.com/?app=angularjs-crypto&root=products-e2e.html" />
+
+Markdown:
+
+    [![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&root=products-e2e.html)]
+
 ##Todo
 
 * configurable heroku check url
