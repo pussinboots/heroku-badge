@@ -9,7 +9,7 @@ var server = connect()
 server.use(serveStatic(__dirname+'/public'));
 server.use(function (req, res, next) {
 	var app = url.parse(req.url, true).query.app;
-	requestCl.get({url:"https://"+app+".herokuapp.com/images/heroku-badge.png",  encoding: 'binary'}, function(error, response, body) {
+	requestCl.get({url:"https://"+app+".herokuapp.com/"}, function(error, response, body) {
 		if(error || response.statusCode!=200) {
 			var errorMessage = error || response.statusCode;
 			console.log('server error image for ' + app + ' error ' + errorMessage);
@@ -19,9 +19,9 @@ server.use(function (req, res, next) {
 			
 		} else {
 			console.log('server success image for ' + app);
+			var fileStream = fs.createReadStream('public/images/heroku-badge.png');
 			res.writeHead(200, {'Content-Type': 'image/png', "Cache-Control:" : "no-cache, no-store, must-revalidate" });
-			res.contentType = 'image/png';
-	     		res.end(body, 'binary');
+        		fileStream.pipe(res);
 		}
 	});
 });

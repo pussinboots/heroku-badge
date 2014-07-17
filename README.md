@@ -9,16 +9,19 @@ This project is build in near 2 hours so it is still pre alpha.
 
 ##Usage
 
-add the following link https://heroku-badge.herokuapp.com/?app=heroku-badge
-and specify with the app parameter the name of your app. Than the heroku badge server
-tries to call
-https://[app].herokuapp.com/images/heroku-badge.png if this failed than the failed badge will return 
-otherwise the called badge will return
+Create an `img` with src `https://heroku-badge.herokuapp.com/?app={app-name}`. E.g.,
+
+HTML:
+
+    <img src="https://heroku-badge.herokuapp.com/?app=heroku-badge" />
+
+Markdown:
+
+    [![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge)]
 
 
 ##Todo
 
-* no nedd to upload the heroku-badge.png into your heroku app
 * configurable heroku check url
 
 ##Copyright
