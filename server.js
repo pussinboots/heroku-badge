@@ -13,7 +13,7 @@ server.use(function(req, res, next) {
   requestCl.get({
     url: "https://" + app + ".herokuapp.com/" + root
   }, function(error, response, body) {
-    if (error || response.statusCode != 200 || response.statusCode != 401) {
+    if (error || [200,401].indexOf(response.statusCode) < 0) {
       var errorMessage = error || response.statusCode;
       console.log('server error image for ' + app + ' error ' + errorMessage);
       var fileStream = fs.createReadStream('public/images/heroku-failed.png');
