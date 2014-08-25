@@ -1,6 +1,8 @@
 language: node_js
 node_js:
-- "0.10"
+  - "0.10"
+notifications:
+  email: false
 deploy:
   provider: heroku
   app: heroku-deployment-badges
@@ -8,4 +10,4 @@ deploy:
   api_key:
     secure: ec15f026261a4c7063454074764257c4281eabe0
 before_deploy:
-- if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
