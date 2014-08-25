@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- 0.1
+- "0.10"
 deploy:
   provider: heroku
   app: heroku-deployment-badges
