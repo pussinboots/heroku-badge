@@ -1,11 +1,8 @@
 heroku-deployment-badges
 ==================
-[![Build Status](https://travis-ci.org/welcoMattic/heroku-deployment-badges.svg?branch=master)](https://travis-ci.org/welcoMattic/heroku-deployment-badges)
-[![Dependencies](https://david-dm.org/welcoMattic/heroku-deployment-badges.png)](https://david-dm.org/welcoMattic/heroku-deployment-badges)
+[![Build Status](https://travis-ci.org/welcoMattic/heroku-badge.svg?branch=master)](https://travis-ci.org/welcoMattic/heroku-badge)
+[![Dependencies](https://david-dm.org/welcoMattic/heroku-badge.png)](https://david-dm.org/welcoMattic/heroku-badge)
 [![Heroku](http://heroku-deployment-badges.herokuapp.com/?app=heroku-deployment-badges)](http://heroku-deployment-badges.herokuapp.com/projects.html)
-
-Can be used to display heroku based badge that show heroku running when heroku app response otherwise heroku failed.
-This project is build in near 2 hours so it is still pre alpha.
 
 ##Usage
 
