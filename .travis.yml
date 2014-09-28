@@ -5,9 +5,8 @@ notifications:
   email: false
 deploy:
   provider: heroku
-  app: heroku-deployment-badges
-  strategy: git
-  api_key:
-    secure: ec15f026261a4c7063454074764257c4281eabe0
+  app: heroku-badge
+api_key:
+  secure: DQS/4k7r6kBdvlC12UdVlvFF71RbbpR+rJpXkmKmWEeuZPCRv4lHd5uboq2UBsHKjsN2J7WrNYqKuFlR84cPnUVEz384N3NoG0ebYzQaxgtV3PVzLYKFuIyd22rtv5JqqrVrC6s7whUgqxYdImI72Yah1q4ADTjRdV6meBBeypE=
 before_deploy:
-  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
