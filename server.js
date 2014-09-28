@@ -3,9 +3,9 @@ var requestCl = require("request");
 var serveStatic = require('serve-static');
 var fs = require('fs');
 var url = require('url');
-
 var port = Number(process.env.PORT || 9000);
 var server = connect()
+
 server.use(serveStatic(__dirname + '/public'));
 server.use(function(req, res, next) {
   var app = url.parse(req.url, true).query.app;
