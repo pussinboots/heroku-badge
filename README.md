@@ -25,10 +25,18 @@ HTML:
 Markdown:
 
     [![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&root=products-e2e.html)]
+    
+Support now flat badge design.
+
+HTML:
+
+    <img src="http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat" />
+
+Markdown:
+
+    [![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat)]
 
 ##Todo
-
-* configurable heroku check url
 
 ##Copyright
 
