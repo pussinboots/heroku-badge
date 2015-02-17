@@ -11,6 +11,7 @@ server.use(function(req, res, next) {
   var app = url.parse(req.url, true).query.app;
   var root = url.parse(req.url, true).query.root || '';
   var style = url.parse(req.url, true).query.style || '';
+  if (style.length > 0) style = '-' +style;
   requestCl.get({
     url: "https://" + app + ".herokuapp.com/" + root
   }, function(error, response, body) {
