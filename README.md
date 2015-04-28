@@ -34,8 +34,6 @@ Markdown:
 
     [![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat)]
 
-##Todo
-
 ##Copyright
 
 The badges are made by me but feel free to use and copy it of course you have to copy it into your heroku app.
