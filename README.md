@@ -6,7 +6,7 @@ heroku-deployment-badges
 
 ##Usage
 
-Create an `img` with src `https://heroku-deployment-badges.herokuapp.com/?app={app-name}`. E.g.,
+Create an `img` with src `https://heroku-badge.herokuapp.com/?app={app-name}`. E.g.,
 
 HTML:
     <img src="https://heroku-badge.herokuapp.com/?app=heroku-badge" />
