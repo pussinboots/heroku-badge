@@ -24,7 +24,16 @@ HTML:
 Markdown:
 
     [![Heroku](http://heroku-badge.herokuapp.com/?app=heroku-badge&root=projects.html)]
-    
+
+Failed Example
+
+HTML:
+    <img src="http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat&svg=1&root=notfound.html" />
+
+Markdown:
+
+    [![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat&svg=1&root=notfound.html)]    
+
 Support now flat badge design.
 
 HTML:
