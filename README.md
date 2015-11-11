@@ -34,6 +34,16 @@ Markdown:
 
     [![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat)]
 
+Support now svg images.
+
+HTML:
+    <img src="http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat&svg=1" />
+
+Markdown:
+
+    [![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat&svg=1)]
+
+
 ##Copyright
 
 The badges are made by me but feel free to use and copy it of course you have to copy it into your heroku app.
