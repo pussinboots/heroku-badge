@@ -29,6 +29,9 @@ server.use(function(req, res, next) {
       console.log('server error image for ' + app + ' error ' + errorMessage);
       
       var fileStream = fs.createReadStream('public/images/heroku-failed' + style + '.' + fileExtension);
+      if (fileExtension == 'svg') {
+      	fileExtension = 'svg+xml';
+      }
       res.writeHead(200, {
         'Content-Type': 'image/'+fileExtension,
         "Cache-Control:": "no-cache, no-store, must-revalidate"
@@ -37,6 +40,9 @@ server.use(function(req, res, next) {
     } else {
       console.log('server success image for ' + app);
       var fileStream = fs.createReadStream('public/images/heroku-badge' + style + '.' + fileExtension);
+      if (fileExtension == 'svg') {
+      	fileExtension = 'svg+xml';
+      }
       res.writeHead(200, {
         'Content-Type': 'image/'+fileExtension,
         "Cache-Control:": "no-cache, no-store, must-revalidate"
