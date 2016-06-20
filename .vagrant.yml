@@ -1,0 +1,9 @@
+repo: 
+    - pussinboots/vagrant-devel
+folder: /vagrant/project/heroku-badge
+deps: 
+    - sublime3
+    - firefox
+    - nodejs
+    - heroku
+    - travis
