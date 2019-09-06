@@ -4,7 +4,7 @@ heroku-deployment-badges
 [![Dependencies](https://david-dm.org/pussinboots/heroku-badge.png)](https://david-dm.org/pussinboots/heroku-badge)
 [![Heroku](https://heroku-badge.herokuapp.com/?app=heroku-badge&style=flat)](https://heroku-badge.herokuapp.com/projects.html)
 
-##Usage
+## Usage
 
 Create an `img` with src `https://heroku-badge.herokuapp.com/?app={app-name}`. E.g.,
 
@@ -66,7 +66,7 @@ Markdown:
     [![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat&svg=1&root=index.html)]
 
 
-##Copyright
+## Copyright
 
 The badges are made by me but feel free to use and copy it of course you have to copy it into your heroku app.
 
